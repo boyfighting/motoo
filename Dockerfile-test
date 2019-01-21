@@ -1,0 +1,27 @@
+FROM registry.cn-beijing.aliyuncs.com/muzhiyun-hub/muzhiyun_base:latest
+
+MAINTAINER jiachen jiachen@infomedia.com.cn
+
+RUN apt-get install -y bzip2
+RUN npm install cnpm -g
+RUN mkdir -p /mottoo/app
+WORKDIR /mottoo/app
+COPY ./package.json /mottoo/app
+RUN npm cache clean antd
+RUN cnpm install phantomjs-prebuilt && cnpm install
+COPY . /mottoo/app
+RUN npm run build:dev
+
+# COPY package.json /tmp/package.json
+# RUN cd /tmp && npm install phantomjs-prebuilt && npm install --registry=http://npm.muzhiyun.cn
+# RUN mkdir -p /mottoo/app && cp -a /tmp/node_modules /mottoo/app/
+# WORKDIR /mottoo/app
+# COPY . /mottoo/app
+
+# RUN npm run deploy:test
+
+COPY ./nginx-test.conf /etc/nginx/nginx.conf
+# COPY ./dist /usr/share/nginx/html
+RUN cp -r ./build/* /usr/share/nginx/html
+
+CMD ["nginx", "-g", "daemon off;"]

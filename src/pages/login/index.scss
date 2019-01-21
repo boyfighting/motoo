@@ -1,0 +1,86 @@
+@import '../../style/default.scss';
+.login-page{
+    .ant-input-lg,
+    .ant-btn-lg{
+        height:40px;
+        font-size:14px;
+    }
+    .login-form-button{
+        width:100%;
+        margin-top:15px;
+    }
+    .ant-tabs-nav-container{
+      width: 100%;
+      font-size: 16px;
+      .ant-tabs-nav.ant-tabs-nav-animated {
+        width: 100%;
+        .ant-tabs-tab-active{
+          width: 50%;
+          margin: 0;
+          text-align: center;
+        }
+        .ant-tabs-tab{
+          width: 50%;
+          margin: 0;
+          text-align: center;
+        }
+      }
+    }
+    .login-content-wrap{
+      width: 1140px;
+      padding: 128px 50px 64px;
+      margin: 0px auto;
+      min-height: calc(100vh - 11rem);
+    }
+    .login-box{
+      position:relative;
+      width: 380px;
+      height:370px;
+      padding:40px 30px 0 30px;
+      background:#fff;
+      overflow:hidden;
+      margin: 0 auto;
+      .title{
+        line-height:1;
+        margin-bottom:50px;
+        font-size:24px;
+        color:#333;
+        font-weight: 500;
+        text-align:center;
+      }
+      .error-msg-wrap{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        div{
+            visibility: hidden;
+            height:30px;
+            line-height:30px;
+            background:#f60c1a;
+            color:#fff;
+            font-size:14px;
+            text-align:center;
+            transform:translateY(-30px);
+            transition: all .3s ease-out;
+            &.show{
+                visibility:visible;
+                transform:translateY(0);
+                transition: all .3s ease-out;
+            }
+        }
+      }
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .login-header{
+      padding-left:30px;
+      padding-right:30px;
+  }
+  .login-content{
+      .word{
+          font-size:48px;
+      }
+  }
+}

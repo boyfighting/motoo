@@ -1,0 +1,23 @@
+// @import "./../../style/default.less";
+
+.footer{
+    padding: 24px 50px;
+    text-align: center;
+    color:rgba(0,0,0,.65);
+    background: #f0f2f5;
+    .links{
+      margin-bottom: 8px;
+      a {
+        color: rgba(0,0,0,.65);
+        
+      }
+      a:not(:last-child){
+        margin-right: 40px;
+      }
+    }
+    .global {
+      padding: 0 16px;
+      margin: 48px 0 24px;
+      text-align: center;
+    }
+}

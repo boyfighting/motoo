@@ -1,0 +1,78 @@
+@import "./default.scss";
+@import "./loading.scss";
+ul,
+li {
+  list-style: none;
+}
+.clearfix {
+  &::after {
+    content: " ";
+    clear: both;
+    display: block;
+    visibility: hidden;
+  }
+}
+.container {
+  .nav-left {
+    background-color: #001529;
+    color: #ffffff;
+    height: calc(100vh);
+  }
+  .main {
+    height: calc(100vh);
+    background-color: #fff;
+    overflow: auto;
+  }
+  .content {
+    position: relative;
+    padding: 20px;
+  }
+}
+
+.content-wrap {
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  margin-top: -3px;
+  .ant-table-wrapper {
+    margin-left: -1px;
+    margin-right: -2px;
+  }
+}
+.ant-card {
+  button {
+    margin-right: 10px;
+  }
+}
+.logo {
+  height: 64px;
+  background: #002140;
+  position: relative;
+  padding-left: 24px;
+  line-height: 64px;
+  width: 100%;
+  overflow: hidden;
+  vertical-align: top;
+  .logoHref {
+    img {
+      vertical-align: middle;
+      height: 32px;
+      width: 32px;
+    }
+  }
+  h1 {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 0 0 12px;
+    font-family: Myriad Pro, Helvetica Neue, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+.trigger {
+  font-size: 20px;
+  line-height: 64px;
+  padding: 0 24px;
+  transition: all 0.3s, padding 0s;
+  cursor: pointer;
+}

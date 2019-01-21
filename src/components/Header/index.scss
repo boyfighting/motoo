@@ -1,0 +1,26 @@
+.header {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  .trigger {
+    font-size: 20px;
+    line-height: 64px;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: color .3s;
+    :hover {
+      color: #1890ff;
+    }
+  }
+  .profile {
+    margin: 30px 20px 0 0;
+    img {
+      width: 32px;
+      height: 32px;
+      border-radius: 32px;
+    }
+  }
+  a {
+    color: #333;
+  }
+}

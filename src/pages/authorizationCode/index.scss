@@ -1,0 +1,14 @@
+
+
+.authorizationCode {
+  .codeManagement {
+    display: flex;
+    background: #fff;
+    padding: 12px 24px;
+    font-size: 20px;
+    justify-content: space-between;
+  }
+  .ant-table-tbody>tr>td, .ant-table-thead>tr>th{
+    word-break: break-word;
+  }
+}

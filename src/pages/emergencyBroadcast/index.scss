@@ -1,0 +1,138 @@
+.map {
+  width: 100%;
+  height: 655px;
+  position: relative;
+}
+
+.drawBtn {
+  z-index: 999;
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+.closeDrawBtn {
+  z-index: 999;
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.mapPosi {
+  position: relative;
+}
+
+.save {
+  z-index: 999;
+  height: 40px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.edit {
+  z-index: 999;
+  height: 40px;
+  position: absolute;
+  top: 80px;
+  left: 30px;
+}
+
+.clean {
+  z-index: 999;
+  height: 40px;
+  position: absolute;
+  top: 130px;
+  left: 30px;
+}
+
+.play {
+  z-index: 999;
+  height: 40px;
+  position: absolute;
+  top: 180px;
+  left: 30px;
+}
+
+.floatDiv {
+  width: 270px;
+  height: 310px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #ffffff;
+  box-shadow: -1px 2px 22px #000000;
+  padding: 10px;
+}
+
+.voiceModal {
+  width: 1000px !important;
+}
+
+.playModal {
+  width: 350px !important;
+}
+
+.areaList {
+  border-bottom: 1px solid #f0f0f0;
+  height: 40px;
+  width: 100%;
+  padding-top: 8px;
+  cursor: pointer;
+}
+
+.areaList:hover {
+  background-color: #e4f2ff;
+}
+
+.pagi {
+  margin-top: 20px;
+  position: absolute;
+  bottom: 15px;
+}
+
+.newAreaBtn {
+  margin-bottom: 6px;
+}
+
+.alp {
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100px;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.listButton {
+  margin-right: 10px;
+}
+
+.clicked {
+  background-color: red;
+}
+
+.modalInp {
+  width: 250px;
+  margin-left: 20px;
+}
+
+.fl20px {
+  margin-left: 20px;
+}
+
+.playIcon {
+  font-size: 25px;
+  cursor: pointer;
+}
